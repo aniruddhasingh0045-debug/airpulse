@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets - NEVER commit these
+.env
+*.pem
+*.key
+
+# Data files
+data/raw/*
+!data/raw/.gitkeep
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Airflow and dbt generated files
+airflow/logs/
+dbt_project/target/
+dbt_project/logs/
